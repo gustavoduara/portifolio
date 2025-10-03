@@ -1,17 +1,3 @@
-const dadosCardDuoBingo = {
-    titulo: 'DuoBingo',
-    imagem: './assets/controle-de-medicamentos.png',
-    gif: 'https://i.imgur.com/SDgwx8m.gif',
-    urlRepositorio: 'https://github.com/academiadoprogramador-fullstack/controle-de-medicamentos-2025',
-    stack: [
-        'https://skillicons.dev/icons?i=html&theme=light',
-        'https://skillicons.dev/icons?i=css&theme=light',
-        'https://skillicons.dev/icons?i=cs&theme=light',
-        'https://skillicons.dev/icons?i=net&theme=light',
-    ],
-    descricao: `O sistema de Controle de Medicamentos apresenta o conceito de gerenciamento de um posto de saúde, com o controle de fornecimento, estoque, funcionários, pacientes e retirada de prescrições — com foco na rastreabilidade das movimentações de estoque.`
-};
-
 const dadosCardGestaoEquipamentos = {
     titulo: 'Gestão de Equipamentos',
     imagem: './assets/gestao-de-equipamentos.png',
