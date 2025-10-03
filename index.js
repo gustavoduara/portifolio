@@ -41,10 +41,10 @@ function carregarDadosCardAtual() {
 }
 
 function selecionarPrimeiroCard() {
-    if (cardSelecionado == dadosCardControleMedicamentos)
+    if (cardSelecionado == dadosCardDuoBingo)
         return;
 
-    cardSelecionado = dadosCardControleMedicamentos;
+    cardSelecionado = dadosCardDuoBingo;
     carregarDadosCardAtual();
 }
 
