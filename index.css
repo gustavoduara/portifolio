@@ -1,4 +1,4 @@
-﻿﻿:root {
+﻿﻿﻿:root {
     --secao-bg-color: rgba(29, 29, 29, .22);
     --secao-box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, .15);
 }
@@ -58,6 +58,11 @@ body {
     box-shadow: var(--secao-box-shadow);
 }
 
+#portfolio {
+    background: var(--secao-bg-color);
+    box-shadow: var(--secao-box-shadow);
+}
+
 #contato {
     background: var(--secao-bg-color);
     box-shadow: var(--secao-box-shadow);
@@ -69,3 +74,7 @@ body {
         height: 3.2rem;
         width: 3.2rem;
     }
+
+.modal-body-customizado {
+    background-color: #3d3d3d;
+}

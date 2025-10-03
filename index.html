@@ -44,23 +44,23 @@
         </section>
 
         <section id="banner" class="rounded-4 mt-3 p-3">
-            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 px-lg-3">
 
                 <div class="col order-1 order-lg-0">
                     <div class="textContent">
                         <p class="text-white fs-3 mb-1">Olá, eu sou <strong>Gustavo Duara</strong>!</p>
-                        <span class="fs-1 fw-bold banner-text">Desenvolvedor</span>
+                        <span class="fs-1 fw-bold banner-text">Desenvolvedor e Professor</span>
                     </div>
 
                     <div class="d-flex align-items-center gap-3 mt-3">
                         <a class="btn btn-primary" href="#contato">Contate-me!</a>
 
                         <div class="d-flex">
-                            <a target="_blank" href="https://github.com/gustavoduara">
-                                <img alt="github logo" src="assets/githublogo.png" />
+                            <a target="_blank" href="https://github.com/GustavoDuara">
+                                <img alt="githublogo" src="assets/githublogo.png" />
                             </a>
 
-                            <a target="_blank" href="https://linkedin.com/in/gustavoduara">
+                            <a target="_blank" href="https://linkedin.com/in/GustavoDuara">
                                 <img alt="Linkedin logo" src="assets/linkedin.png" />
                             </a>
                         </div>
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="col-3 mx-auto pt-2 order-0 order-lg-1 bg-foto">
-                    <img class="img-fluid mt-4 rounded-circle" src="assets/foto.png" alt="Foto Gustavo Duara">
+                    <img class="img-fluid mt-4" src="assets/foto.png" alt="Foto Gustavo Duara">
                 </div>
             </div>
         </section>
@@ -78,7 +78,15 @@
                 <div class="d-flex flex-column text-white fs-5 ps-3 border-start border-2 border-white">
                     <p class="fs-2 fw-bold">Sobre Mim</p>
                     <p>
-                        Olá! Meu nome é <strong>Gustavo Duara</strong>, sou Desenvolvedor Full-Stack no curso da <strong>Academia do Programador</strong>.
+                        Olá! Meu nome é <strong>Gustavo Duara</strong>, sou Desenvolvedor Full-Stack da <strong>Academia do Programador</strong>. Estou no mundo da programação há 1 ano, passando a maior parte deste tempo desenvolvimento sistemas internos e a programação do curso.
+                    </p>
+
+                    <p>
+                        Trabalho principalmente com a <strong>Plataforma .NET</strong> — com os frameworks MVC, Blazor e Web API — além de <strong>TypeScript</strong> com Node.js e Angular.
+                    </p>
+
+                    <p>
+                        Também tenho experiência com bancos de dados <strong>SQL</strong> (SQL Server, MySQL, Postgres, SQLite) e <strong>NoSQL</strong> (MongoDB)... alêm de experiência com aspectos de DevOps como <strong>GitHub Workflows</strong> e <strong>Docker</strong>.
                     </p>
                 </div>
 
@@ -86,7 +94,6 @@
             </article>
 
         </section>
-
 
         <section id="habilidades" class="rounded-4 mt-3 px-3 py-4 text-white">
 
@@ -136,6 +143,37 @@
             </div>
         </section>
 
+        <section id="portfolio" class="rounded-4 mt-3 px-3 py-4 text-white">
+
+            <span class="fw-bold fs-1 mt-5 ps-3">Portfólio</span>
+
+            <p class="fs-5 mt-3 ps-3">
+                Nesta seção, apresento os projetos dos quais participei e que refletem minha experiência e habilidades como desenvolvedor. Ao clicar em cada card, um modal será exibido, proporcionando uma visualização detalhada do funcionamento de cada projeto. Cada trabalho representou uma oportunidade de aprendizado e inovação!
+            </p>
+
+            <div class="card mt-4 mx-3 mx-md-auto rounded-4" style="max-width: 500px;" data-bs-theme="dark">
+                <img id="imgCard" class="card-img-top rounded-top-4">
+                <div class="card-body d-flex flex-column gap-2">
+                    <span id="stackCard" class="d-flex gap-1"></span>
+                    <h5 id="tituloCard" class="card-title mt-2"></h5>
+                    <p id="descricaoCard" class="card-text"></p>
+                    <div class="">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal" id="btnVerProjeto">
+                            Ver projeto
+                        </button>
+                        <a id="urlRepositorio" class="btn btn-outline-light">Repositório</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                <button id="btnSelecionarPrimeiroCard" class="btn btn-primary" style="width: 240px;">Controle de Medicamentos</button>
+                <button id="btnSelecionarSegundoCard" class="btn btn-primary" style="width: 240px;">Gestão de Equipamentos</button>
+            </div>
+
+        </section>
+
         <section id="contato" class="rounded-4 mt-3 p-3 p-lg-4">
 
             <span class="text-white fw-bold fs-1">Contato</span>
@@ -149,7 +187,7 @@
                         </path>
                     </svg>
                 </div>
-                <span class="text-white ps-2">(49) 9 9113-0685</span>
+                <span class="text-white ps-2">(49) 9 98505-6251</span>
 
             </div>
 
@@ -162,7 +200,7 @@
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                     </svg>
                 </div>
-                <span class="text-white ps-2">gugaduara&#64;gmail.com</span>
+                <span class="text-white ps-2">Gustavo&#64;academiadoprogramador.net</span>
 
             </div>
 
@@ -177,16 +215,16 @@
                         </path>
                     </svg>
                 </div>
-                <span class="text-white ps-2">Itapema- Meia Praia - SC - Brasil</span>
+                <span class="text-white ps-2">Lages - SC - Brasil</span>
 
             </div>
 
             <div class="d-flex mt-3">
-                <a target="_blank" href="https://github.com/gustavoduara">
-                    <img alt="github logo" src="assets/githublogo.png" alt="Alternate Text" />        
+                <a target="_blank" href="https://github.com/GustavoDuara">
+                    <img alt="Githublogo" src="assets/githublogo.png" />
                 </a>
 
-                <a target="_blank" href="https://linkedin.com/in/gustavoduara">
+                <a target="_blank" href="https://linkedin.com/in/GustavoDuara">
                     <img alt="Linkedin logo" src="assets/linkedin.png" />
                 </a>
             </div>
@@ -194,6 +232,21 @@
         </section>
     </main>
 
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content bg-dark text-white rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body text-center rounded-bottom-4 modal-body-customizado">
+                    <img id="portfolioModalImage" src="" alt="Imagem do Projeto" class="img-fluid mb-3" />
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="./index.js"></script>
 </body>
 </html>
