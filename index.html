@@ -78,7 +78,7 @@
                 <div class="d-flex flex-column text-white fs-5 ps-3 border-start border-2 border-white">
                     <p class="fs-2 fw-bold">Sobre Mim</p>
                     <p>
-                        Olá! Meu nome é <strong>Gustavo Duara</strong>, sou Desenvolvedor Full-Stack da <strong>Academia do Programador</strong>. Estou no mundo da programação há 1 ano e meio, passando a maior parte deste tempo desenvolvimento sistemas internos e a programação do curso. Após o termino do curso, comecei a cursar Ciencia da computação no IFSC Lages, o qual estou na Segunda Fase, onde estou aprofundando meus conhecimentos em Java, banco de dados, etc.
+                        Olá! Meu nome é <strong>Gustavo Duara</strong>, sou Desenvolvedor Formado Full-Stack da <strong>Academia do Programador</strong>. Estou no mundo da programação há 1 ano e meio, passando a maior parte deste tempo desenvolvimento sistemas internos e a programação do curso. Após o termino do curso, comecei a cursar Ciencia da computação no IFSC Lages, o qual estou na Segunda Fase, onde estou aprofundando meus conhecimentos em Java, banco de dados, etc.
                     </p>
 
                     <p>
@@ -153,7 +153,7 @@
             <span class="fw-bold fs-1 mt-5 ps-3">Portfólio</span>
 
             <p class="fs-5 mt-3 ps-3">
-                Nesta seção, apresento os projetos dos quais participei e que refletem minha experiência e habilidades como desenvolvedor. Ao clicar em cada card, um modal será exibido, proporcionando uma visualização detalhada do funcionamento de cada projeto. Cada trabalho representou uma oportunidade de aprendizado e inovação!
+                Nesta seção, apresento os projetos dos quais participei e que refletem minha experiência e habilidades como desenvolvedor. Utilize os botões para alternar a visualização dos projetos e acessar diretamente seus repositórios!
             </p>
 
             <div class="card mt-4 mx-3 mx-md-auto rounded-4" style="max-width: 500px;" data-bs-theme="dark">
@@ -162,19 +162,15 @@
                     <span id="stackCard" class="d-flex gap-1"></span>
                     <h5 id="tituloCard" class="card-title mt-2"></h5>
                     <p id="descricaoCard" class="card-text"></p>
-                    <div class="">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal" id="btnVerProjeto">
-                            Ver projeto
-                        </button>
-                        <a id="urlRepositorio" class="btn btn-outline-light">Repositório</a>
+                    <div>
+                        <a id="urlRepositorio" class="btn btn-outline-light" target="_blank">Repositório</a>
                     </div>
-
                 </div>
             </div>
 
             <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
                 <button id="btnSelecionarPrimeiroCard" class="btn btn-primary" style="width: 240px;">DuoBingo(Agenda)</button>
-                <button id="btnSelecionarSegundoCard" class="btn btn-primary" style="width: 240px;">Gestão de Equipamentos</button>
+                <button id="btnSelecionarSegundoCard" class="btn btn-primary" style="width: 240px;">Controle de Cinema</button>
             </div>
 
         </section>
@@ -236,20 +232,6 @@
 
         </section>
     </main>
-
-    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content bg-dark text-white rounded-4">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModalLabel"></h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body text-center rounded-bottom-4 modal-body-customizado">
-                    <img id="portfolioModalImage" src="" alt="Imagem do Projeto" class="img-fluid mb-3" />
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script charset="utf-8" src="./index.js"></script>
