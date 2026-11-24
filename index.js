@@ -25,6 +25,22 @@ const dadosCardGestaoEquipamentos = {
     descricao: `O APMDb é uma aplicação web de catálogo de filmes e séries inspirada no TMDB. O projeto permite buscar títulos, explorar lançamentos populares, navegar por categorias de filmes e programas de TV e conferir avaliações de público em tempo real, entregando uma navegação fluida e moderna.`
 };
 
+const dadosCardSerraDrive = {
+    titulo: 'SerraDrive (Locadora de Veículos)',
+    imagem: './assets/serradrive.jpg',
+    gif: '',
+    urlRepositorio: 'https://github.com/gustavoduara/LocadoraVeiculos2026',
+    stack: [
+        'https://skillicons.dev/icons?i=cs&theme=light',
+        'https://skillicons.dev/icons?i=dotnet&theme=light',
+        'https://skillicons.dev/icons?i=angular&theme=light',
+        'https://skillicons.dev/icons?i=ts&theme=light',
+        'https://skillicons.dev/icons?i=tailwind&theme=light',
+        'https://skillicons.dev/icons?i=docker&theme=light',
+    ],
+    descricao: 'Sistema web multiempresa para gestão de locadoras de veículos, feito com ASP.NET Core (.NET 10) e Angular 20. A locadora gerencia frota, planos de cobrança, clientes, condutores, cupons, reservas e aluguéis com devolução; o cliente busca carros de todas as locadoras por período, reserva online e conversa com a locadora em tempo real (SignalR). Conta com autenticação JWT, perfis de acesso, confirmação de e-mail, LGPD, testes automatizados (cobertura de ~89%), CI no GitHub Actions e Docker.'
+};
+
 let cardSelecionado;
 
 function carregarDadosCardAtual() {
@@ -61,9 +77,16 @@ function selecionarSegundoCard() {
     carregarDadosCardAtual();
 }
 
+function selecionarTerceiroCard() {
+    cardSelecionado = dadosCardSerraDrive;
+    carregarDadosCardAtual();
+}
+
 function main() {
     const btnSelecionarPrimeiroCard = document.getElementById("btnSelecionarPrimeiroCard");
     const btnSelecionarSegundoCard = document.getElementById("btnSelecionarSegundoCard");
+
+    const btnSelecionarTerceiroCard = document.getElementById("btnSelecionarTerceiroCard");
 
     if (btnSelecionarPrimeiroCard) {
         btnSelecionarPrimeiroCard.addEventListener('click', selecionarPrimeiroCard);
@@ -72,7 +95,11 @@ function main() {
         btnSelecionarSegundoCard.addEventListener('click', selecionarSegundoCard);
     }
 
-    selecionarPrimeiroCard();
+    if (btnSelecionarTerceiroCard) {
+        btnSelecionarTerceiroCard.addEventListener('click', selecionarTerceiroCard);
+    }
+
+    selecionarTerceiroCard();
 }
 
 document.addEventListener('DOMContentLoaded', main);
