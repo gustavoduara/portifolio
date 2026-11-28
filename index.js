@@ -3,11 +3,28 @@
 const projetos = [
     {
         titulo: 'SerraDrive (Locadora de Veículos)',
+        etiqueta: '✓ Concluído',
         imagem: './assets/serradrive.jpg',
         destaque: true,
-        urlRepositorio: 'https://github.com/gustavoduara/LocadoraVeiculos2026',
+        urlRepositorio: 'https://github.com/gustavoduara/SerraDrive',
         stack: ['C#', '.NET 10', 'Angular 20', 'TypeScript', 'SQL Server', 'Docker'],
         descricao: 'Sistema web multiempresa para gestão de locadoras. A locadora controla frota, planos de cobrança, clientes, cupons, reservas e aluguéis com devolução; o cliente busca carros de todas as locadoras, reserva online e conversa com a locadora em tempo real (SignalR). Autenticação JWT, perfis de acesso, confirmação de e-mail, LGPD, testes automatizados (~89% de cobertura), CI no GitHub Actions e Docker.'
+    },
+    {
+        titulo: 'Poke Lab',
+        etiqueta: '● Em produção',
+        imagem: './assets/pokelab.jpg',
+        urlRepositorio: 'https://github.com/gustavoduara/poke-lab',
+        stack: ['React', 'TypeScript', 'Three.js', 'Vite'],
+        descricao: 'Interface 3D para comércio: site de restaurante de poke com montador de bowl em 3D, em que a pessoa escolhe cada ingrediente e vê o pedido sendo montado. Tem cardápio, sushi, carrinho e modo leve para celulares. O restaurante e os pedidos são de demonstração.'
+    },
+    {
+        titulo: 'VitrinePro',
+        etiqueta: '● Em produção',
+        imagem: './assets/vitrinepro.jpg',
+        urlRepositorio: 'https://github.com/gustavoduara/VitrinePro',
+        stack: ['HTML', 'CSS', 'JavaScript'],
+        descricao: 'Interface 3D para comércio: vitrine interativa para lojas, apresentada aqui com uma loja de streetwear. Os looks aparecem em formato de passarela, com marcadores em cada peça para explorar nome e preço.'
     },
     {
         titulo: 'DuoBingo',
@@ -38,7 +55,7 @@ function renderizarProjetos() {
         <a class="project reveal ${p.destaque ? 'featured' : ''}" href="${p.urlRepositorio}" target="_blank" rel="noopener">
             <div class="p-img">
                 <img src="${p.imagem}" alt="Imagem do projeto ${p.titulo}" loading="lazy">
-                ${p.destaque ? '<span class="tag-destaque">★ Mais recente</span>' : ''}
+                ${p.etiqueta ? `<span class="tag-destaque">${p.etiqueta}</span>` : ''}
             </div>
             <div class="p-body">
                 <div class="chips">${p.stack.map(s => `<span class="chip">${s}</span>`).join('')}</div>
